@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Self-Assignment 2</title>
+    <link rel="stylesheet" href="src/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container shadow">
+        <header>
+            <h1>Tugas Pemrograman Internet</h1>
+        </header>
+        <div class="wrapper shadow">
+            <div class="form-pend">
+                <h2>Form Pendaftaran Mahasiswa</h2>
+                <form class="margin">
+                    <div class="text-input">
+                        <label for="Nama" class="placeholder">Nama</label>
+                        <input type="text" id="Nama" placeholder="Nama" class="margin padding shadow">
+                    </div>
+                    <div class="select-input">
+                        <label for="prodi" class="placeholder">Prodi</label>
+                        <select name="prodi" id="prodi" class="margin padding shadow">
+                            <option value="0">Pilih Prodi</option>
+                            <option value="TI">Teknologi Informasi</option>
+                            <option value="TM">Teknik Mesin</option>
+                            <option value="TA">Teknik Arsitektur</option>
+                            <option value="TInd">Teknik Industri</option>
+                        </select>
+                    </div>
+                    <div class="checkbox-input margin">
+                        <p>Hobi</p>
+                        <label class="checkbox-wrapper">Bermain Voli
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkbox-wrapper">Bermain Ski
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkbox-wrapper">Menyelesaikan Soal Matematika
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkbox-wrapper">Melakukan Pemrograman
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <input type="text" placeholder="Lainnya" class="margin padding shadow">
+                    </div>
+                    <div class="textarea-input">
+                        <label for="Alamat" class="placeholder"> Alamat </label>
+                        <textarea name="Alamat" id="Alamat" cols="25" rows="3" placeholder="Alamat" class="margin padding shadow"></textarea>
+                    </div>
+                    <div class="file-input">
+                        <label for="foto" class="placeholder">Masukkan foto Anda</label>
+                        <input type="file" id="foto" accept="image/*" class="margin padding">
+                    </div>
+                    <div class="button-container">
+                        <button class="shadow">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="tabel-peserta">
+                <h2>Tabel Peserta</h2>
+                <div>
+                    <table>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Foto</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td width="150">Arya</td>
+                            <td width="150">Laki-Laki</td>
+                            <td rowspan="2" width="100">Tidak Ada<br>Foto</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Wirawan</td>
+                            <td>Laki-Laki</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">TOTAL</td>
+                            <td colspan="2">2 Mahasiswa</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Dibuat oleh 2005551072 - I Gusti Ngurah Agung Krisna Adhitya</p>
+        </footer>
+    </div>
+</body>
+</html>

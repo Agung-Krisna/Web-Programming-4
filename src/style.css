@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --shadow: 0 0 15px 4px rgba(0,0,0,0.2);
+    --slateblue: #826AED;
+    --magenta: #C879FF;
+    --pink: #FFB7FF;
+    --turquoise: #3BF4FB;
+    --green: #CAFF8A;
+    --imperialviolet: #5E60CE;
+    --denimblue: #1641C4;
+    --grey: #CCC;
+}
+
+body{
+    background-color: var(--imperialviolet)
+}
+.container
+{
+    background-color: var(--magenta);
+    margin: 0 100px;
+    border-radius: 15px;
+}
+
+header h1
+{
+    text-align: center;
+    color: white;
+}
+
+.wrapper
+{
+    background-color: var(--slateblue);
+    display: flex;
+    padding: 30px;
+    margin: 10px; 
+    border-radius: 15px;
+}
+
+.form-pend{
+    background-color: var(--imperialviolet);
+    margin: 0 35px;
+    min-width: 395px;
+    min-height: 591px;
+    border-radius: 15px;
+    color: var(--turquoise);
+    box-shadow: var(--shadow);
+    border: 1px var(--imperialviolet) dashed;
+    transition: border 0.3s ease-out;
+}
+
+.form-pend:hover{
+    border: 1px var(--pink) dashed;
+}
+.form-pend input[type="text"]{
+    border: 0;
+    border-bottom: 5px pink solid;
+    border-radius: 10px;
+}
+
+.form-pend select{
+    cursor: pointer;
+}
+
+.form-pend h2{
+    text-align: center;
+    padding: 10px;
+}
+
+.checkbox-input p{
+    padding-bottom: 5px;
+}
+.checkbox-wrapper
+{
+    position: relative;
+    /*digunakan agar bisa menyimpan position absolute*/
+    padding-left: 25px;
+    display: block;
+    cursor: pointer;
+}
+
+.checkbox-wrapper input[type="checkbox"]
+{
+    position: absolute;
+    /*digunakan untuk dapat "menghilangkan" checkbox aslinya*/
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.checkbox-wrapper .checkmark{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top:0;
+    left: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.checkbox-wrapper .checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+
+    /* ikon check */
+    left: 6px;
+    top: 2px;
+    width: 4px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.checkbox-wrapper:hover .checkmark{
+    background-color: #ccc;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked ~ .checkmark
+{
+    background-color: greenyellow;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked ~ span:after{
+    display: block
+}
+
+.margin{
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.padding{
+    padding: 10px 20px;
+}
+
+.shadow{
+    box-shadow: var(--shadow);
+}
+
+
+.form-pend .placeholder{
+    display: block;
+    padding: 0 20px;
+}
+
+.form-pend textarea{
+    resize: none;
+    border-radius: 10px;
+}
+
+.form-pend .button-container{
+    display: flex;
+    justify-content: center;
+}
+.form-pend button{
+    background-color: greenyellow;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: ease 0.3s all;
+}
+
+.form-pend button:hover{
+    background-color: green;
+    color: white;
+}
+
+.tabel-peserta{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: var(--imperialviolet);
+    margin-left: 100px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    border: 1px var(--imperialviolet) dashed;
+    transition: border 0.3s ease-out;
+}
+
+.tabel-peserta:hover{
+    border: 1px var(--pink) dashed;
+}
+
+.tabel-peserta h2{
+    text-align: center;
+    padding: 10px;
+    color: var(--turquoise)
+}
+.tabel-peserta table{
+    padding: 10px;
+}
+.tabel-peserta th, td{
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: none;
+    transition: background-color 0.3s ease;
+    cursor: default;
+}
+
+.tabel-peserta th:hover, td:hover{
+    background-color: var(--denimblue);
+}
+footer{
+    color: #ffffff;
+}
